@@ -1,0 +1,53 @@
+:root {
+    --bottom-height: 150px;
+    --bottom-border: 1px;
+
+    --sidebar-width: 200px;
+    --sidebar-border: 1px;
+
+    --main-padding: 15vw;
+    --main-top: 50px;
+
+    --tone0: #010409;
+    --tone1: #0d1117;
+    --tone2: #24292f;
+    --tone3: #88909a;
+    --tone4: #c4c6ce;
+    --coffee: #c0ffee;
+    --sandwich: #ca854c;
+
+    --icon-size: 128px;
+}
+
+html{
+    background-color: var(--tone0);
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--tone4);
+}
+
+h1, h2 {
+    margin-top: 40px;
+}
+
+h3, h4 {
+    margin-top: 30px;
+}
+
+p {
+    color: var(--tone3);
+    margin-top: 10px;
+}
+
+a {
+    color: var(--sandwich);
+}
