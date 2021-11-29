@@ -6,14 +6,13 @@ import App from './App.vue'
 import VueHighlightJS from 'vue-highlightjs'
 import './main.css'
 
-import EmptyBase from './views/EmptyBase.vue'
+//import EmptyBase from './views/EmptyBase.vue'
 
 import Home from './views/Home.vue'
 import About from './views/About.vue'
-import BotSandwich from './views/BotSandwich.vue'
+import Contact from './views/Contact.vue'
 
-import Projects from './views/Projects/Projects.vue'
-import Website from './views/Projects/Website.vue'
+import Projects from './views/Projects.vue'
 
 Vue.use(VueRouter);
 Vue.use(VueHighlightJS);
@@ -29,36 +28,17 @@ const routes = [
   {
     path: '/about',
     name: 'About',
-    component: About,
-    children: [
-      {
-        path: '/',
-        name: 'About',
-        component: About
-      }
-    ]
+    component: About
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: Contact
   },
   {
     path: '/projects',
     name: 'Projects',
-    component: EmptyBase,
-    children: [
-      {
-        path: '/',
-        name: 'ProjectsBase',
-        component: Projects
-      },
-      {
-        path: 'botsandwich',
-        name: 'BotSandwich',
-        component: BotSandwich
-      },
-      {
-        path: 'website',
-        name: 'Website',
-        component: Website
-      }
-    ]
+    component: Projects
   }
 ]
 

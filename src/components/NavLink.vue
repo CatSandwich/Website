@@ -1,6 +1,6 @@
 <template>
   <div style="width: 100%">
-    <div class="root" @click="click">{{ text }}</div>
+    <div class="root" :class="{'underline': $route.path.includes(to)}" @click="$router.push(to)">{{ text }}</div>
     <div class="slot" v-if="$route.path.includes(to)"><slot/></div>
   </div>
 </template>
@@ -21,6 +21,10 @@ export default {
 </script>
 
 <style scoped>
+
+.underline{
+  text-decoration: underline;
+}
 
 .root{
   padding: 10px;

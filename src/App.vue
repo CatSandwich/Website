@@ -3,20 +3,24 @@
 
     <div class="sidebar">
       <img class="home-icon" src="@/assets/catsandwich.png" @click="$router.push('/')"/>
-      <nav-link to="/about" text="About">
-        <nav-link to="/about/me" text="Me"/>
-      </nav-link>
-      <nav-link to="/projects" text="Projects">
-        <nav-link to="/projects/botsandwich" text="BotSandwich"/>
-        <nav-link to="/projects/website" text="Website"/>
-      </nav-link>
+      <nav-link to="/about" text="About"/>
+      <nav-link to="/contact" text="Contact"/>
+      <nav-link to="/projects" text="Projects"/>
     </div>
 
     <div class="right-container">
       <main><router-view/></main>
 
       <div class="bottom">
-
+        <div style="margin: 0 auto; display: inline-flex">
+          <p>&copy; 2021 Joshua Torrington-Smith</p>
+          <p style="padding: 0 10px;">|</p>
+          <p><a href="https://github.com/CatSandwich/Website">Source</a></p>
+          <p style="padding: 0 10px;">|</p>
+          <p><a href="https://github.com/CatSandwich">GitHub</a></p>
+          <p style="padding: 0 10px;">|</p>
+          <p><router-link to="/">Home</router-link></p>
+        </div>
       </div>
     </div>
 

@@ -1,5 +1,5 @@
 :root {
-    --bottom-height: 150px;
+    --bottom-height: 50px;
     --bottom-border: 1px;
 
     --sidebar-width: 200px;
@@ -31,7 +31,7 @@ body{
     margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, em {
     color: var(--tone4);
 }
 
@@ -43,11 +43,15 @@ h3, h4 {
     margin-top: 30px;
 }
 
-p {
+p, ul, ol {
     color: var(--tone3);
     margin-top: 10px;
 }
 
 a {
     color: var(--sandwich);
+}
+
+.badge-svg{
+    fill: var(--tone3);
 }
